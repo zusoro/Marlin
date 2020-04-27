@@ -1,5 +1,13 @@
-# Marlin 3D Printer Firmware
-<img align="right" src="../../raw/1.1.x/buildroot/share/pixmaps/logo/marlin-250.png" />
+# Marlin 3D Printer Firmware 
+<img align="right" src="../../raw/1.1.x/buildroot/share/pixmaps/logo/marlin-250.png" /> 
+## Setup to flash firmware:
+
+- Install Arduino IDE and go to Tools-> Boards -> Boards Manager. And check that "Arduino AVR Boards" is running with version 1.6.23.
+- Clone github repo: 'https://github.com/SkyNet3D/anet-board.git' 
+- Copy anet folder from repo into the folder "hardware" installation path of ardunio.
+- in the arduino ide go to sketch and include libraries: and add "LCDMenulib" and "u8glib" and "LiquidCrystal" 
+- To flash select A10 board and AVRISP MKII flasher.
+
 
 Marlin is the world's most popular open source firmware for Replicating Rapid Prototyper (RepRap) machines, commonly referred to as "3D printers." Marlin Firmware is highly efficient, running even on modest 16MHz embedded AVR processors. While Marlin 1.1 only supports ATmega AVR (Arduino, etc.) and AT90USB (Teensy++ 2.0), [Marlin 2.0](https://github.com/MarlinFirmware/Marlin/tree/bugfix-2.0.x) also adds support for several ARM processors, including the SAM3X8E (Arduino Due), NXP LPC1768/LPC1769 ARM Cortex-M3 (Re-Arm, MKS SBASE, Smoothieboard), and ARM Cortex-M4 (Teensy 3.5/3.6, STM32F1/4/7).
 
